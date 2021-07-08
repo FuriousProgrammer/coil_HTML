@@ -1,0 +1,67 @@
+#coilframe {
+	background-color: #888888;
+	width: 710px;
+	height: 600px;
+	border-radius: 15px;
+	border-style: solid;
+	position: relative;
+}
+
+#coilrestart {
+	height: 25px;
+	width: 150px;
+	position: absolute;
+	left: 30px;
+	top: 20px;
+}
+#coilgame {
+	width: 650px;
+	height: 510px;
+	background-color: #666666;
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+}
+#coilgame_inner {
+	display: grid;
+	justify-content: center;
+
+/*	grid-template-columns: repeat(4, 1fr);
+	width: 510px;
+	height: 100%; */
+}
+
+#coilcontinue {
+	position: absolute;
+	left: 205px;
+	top: 230px;
+	width: 300px;
+	height: 140px;
+	font-size: 20;
+
+	display: none;
+}
+
+.cell {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.empty {
+	background-image: url("img/empty.svg");
+}
+.blocked {
+	background-image: url("img/blocked.svg");
+}
+.blockedHit {
+	background-image: url("img/blocked_hit.svg");
+}
+.visited {
+	background-image: url("img/visited.svg"), url("img/empty.svg");
+}
+
+.player {
+	background-image: url("img/player.svg"), url("img/visited.svg"), url("img/empty.svg");
+	background-size: 60%, 100%, 100%;
+}
